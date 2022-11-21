@@ -18,7 +18,7 @@ api_id = 1167185
 api_hash = 'eccec789bc056dda4f7919712a91840f'
 
 
-clientM = TelegramClient("Fernan23", api_id, api_hash)
+clientM = TelegramClient("Admin", api_id, api_hash)
 clientM.start(+5358033572)
 
 clientAdmin: TelegramClient = TelegramClient("Admin", api_id, api_hash)
