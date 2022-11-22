@@ -1,1 +1,1 @@
-worker: python ScriptBetty1.py
+worker: python fight.py
