@@ -192,34 +192,28 @@ for i in snipping:
 ##################################################################################
 #                         Getting info for first time
 ##################################################################################
-async def first_task ():
-    print("First task")
-    myself = usersCharacter[1].get_me()
-    await alts[0].send_message(myself.phone, "Hola, soy RealScript. Esta es mi nueva cuenta, la anterior esta eliminada. Comuniquense inmediatamente por aki para restablecer los servicios. Saludos")
-
 async def f():
     print("Script started")
     dic = dict()
     #await first_task()
+    text_message = "Hola, soy RealScript. Esta es mi nueva cuenta, la anterior esta eliminada. Comuniquense inmediatamente por aki para restablecer los servicios. Dentro de 10 dias quitaré los servicios. Saludos"
     for i in usersCharacter:
         if isinstance(usersCharacter[i], TelegramClient):
             try:
                 myself = await usersCharacter[i].get_me()
                 meCharacter[i] = myself.id
-                #await usersCharacter[i].send_message('chtwrsbot', )
-                #await asyncio.sleep(random.randint(1, 2))
-            except:
+                await alts[str(1)].send_message(myself.username, text_message)
+                await asyncio.sleep(random.randint(1, 2))
+            except Exception as e:
                 print(i)
     for i in alts_service:
         if isinstance(alts_service[i], TelegramClient):
             try:
                 myself = await alts_service[i].get_me()
                 meService[i] = myself.id
-                #if "autumn_ark" in myself.username or "tejo0626" in myself.username:
-                #    await clientAdmin.send_message("RealScript", i)
-                #if myself.phone == "5352459826":
-                #    await clientAdmin.send_message("RealScript", i)
-            except errors.AuthKeyDuplicatedError:
+                await alts[str(1)].send_message(myself.username, text_message)
+                await asyncio.sleep(random.randint(1, 2))
+            except Exception as e:
                 print(i)
     for i in usersCW3:
         if isinstance(usersCW3[i], TelegramClient):
