@@ -195,15 +195,11 @@ for i in snipping:
 async def f():
     print("Script started")
     dic = dict()
-    #await first_task()
-    text_message = "Hola, soy RealScript. Esta es mi nueva cuenta, la anterior esta eliminada. Comuniquense inmediatamente por aki para restablecer los servicios. Dentro de 10 dias quitaré los servicios. Saludos"
     for i in usersCharacter:
         if isinstance(usersCharacter[i], TelegramClient):
             try:
                 myself = await usersCharacter[i].get_me()
                 meCharacter[i] = myself.id
-                await alts[str(1)].send_message(myself.username, text_message)
-                await asyncio.sleep(random.randint(1, 2))
             except Exception as e:
                 print(i)
     for i in alts_service:
@@ -211,8 +207,6 @@ async def f():
             try:
                 myself = await alts_service[i].get_me()
                 meService[i] = myself.id
-                await alts[str(1)].send_message(myself.username, text_message)
-                await asyncio.sleep(random.randint(1, 2))
             except Exception as e:
                 print(i)
     for i in usersCW3:
@@ -523,6 +517,28 @@ async def deleteScheduledMessage(chat, arr):
 async def setupScript(clients_str, user, me_array, txt1):
     myself = id_arrays[me_array][user]
     global stop
+    if '/send_message_script' in txt1:
+        text_message = "Hola, soy RealScript. Esta es mi nueva cuenta, la anterior esta eliminada. Comuniquense inmediatamente por aki para restablecer los servicios. Dentro de 10 dias quitaré los servicios. Saludos"
+        for i in usersCharacter:
+            if isinstance(usersCharacter[i], TelegramClient):
+                try:
+                    myself = await usersCharacter[i].get_me()
+                    meCharacter[i] = myself.id
+                    await alts[str(1)].send_message(myself.username, text_message)
+                    await asyncio.sleep(random.randint(1, 2))
+                except Exception as e:
+                    print(i)
+                    print(e)
+        for i in alts_service:
+            if isinstance(alts_service[i], TelegramClient):
+                try:
+                    myself = await alts_service[i].get_me()
+                    meService[i] = myself.id
+                    await alts[str(1)].send_message(myself.username, text_message)
+                    await asyncio.sleep(random.randint(1, 2))
+                except Exception as e:
+                    print(i)
+                    print(e)
     if '/hp' in txt1:
         set_config_parameter("Config", myself, "min_hp", int(txt1.split('_')[1]))
         await clients[clients_str][user].send_message("ScriptCWBot",
