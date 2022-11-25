@@ -52,14 +52,14 @@ blacklist_monsters_chats = {"Nobody3": ["chtwrsbot"],"Force2": ["chtwrsbot"],
                             "Jean": ["chtwrsbot"], "Jean4": ["chtwrsbot"], "Masiel": ["chtwrsbot"],
                             "Jean2": ["chtwrsbot"], "Fernan14": ["chtwrsbot"], "Jean1": ["chtwrsbot"],
                             "Yoan": ["chtwrsbot"], "Sylvanna": ["chtwrsbot"],
-                            "Force": ["chtwrsbot"], "Naav": ["chtwrsbot"],
+                            "Force": ["chtwrsbot"],
                             "Yoama": ["chtwrsbot"], "Dani1": ["chtwrsbot"], "Nico": ["chtwrsbot"],
                             "Mask": ["chtwrsbot"], "Legendary": ["chtwrsbot"], "Blaze1": ["chtwrsbot"],
-                            "Nico3": ["chtwrsbot"], "Julio4": ["chtwrsbot"], "Julio5": ["chtwrsbot"],
-                            "Julio6": ["chtwrsbot"], "Julio7": ["chtwrsbot"], "Zero": ["chtwrsbot"],
+                            "Nico3": ["chtwrsbot"], "Julio5": ["chtwrsbot"],
+                            "Julio6": ["chtwrsbot"], "Julio7": ["chtwrsbot"],
                             "Nico2": ["chtwrsbot"], "Yoandris": ["chtwrsbot"], "Julio2": ["chtwrsbot"],
                             "Deadpool": ["chtwrsbot"], "Sleep": ["chtwrsbot"], "Unknown": ["chtwrsbot"], "Kirito": ["chtwrsbot"],
-                             "Zero2": ["chtwrsbot"], "Naruto": ["chtwrsbot"],
+                             "Naruto": ["chtwrsbot"],
                             "Unknown1": ["chtwrsbot"], "Unknown2": ["chtwrsbot"], "Unknown3": ["chtwrsbot"]
                             , "Unknown4": ["chtwrsbot"], "Unknown5": ["chtwrsbot"],"Fernan13": ["chtwrsbot"], "Negan": ["chtwrsbot"],
                             "Fernan17": ["chtwrsbot"], "Negan1":["chtwrsbot"], "Mahalo1": ["chtwrsbot"], "Fernan16": ["chtwrsbot"], "Nobody2": ["chtwrsbot"], "Trinity1": ["chtwrsbot"],
@@ -77,30 +77,26 @@ num_users = 2
 alts = {}
 #Julio5, Julio6
 #Masiel1, Masiel
-alts_service: dict = {"Fernan11": 0, "Smith1": 1, "Unknown": 2, "Fernan22": 3, "Fernan12": 4, "Blaze3": 5, "Ginny": 6, "Fernan31": 7,
+alts_service: dict = {"Fernan11": 0, "Smith1": 1, "Unknown": 2, "Fernan22": 3, "Fernan12": 4, "Trinity4": 5, "Trinity3": 6, "Fernan31": 7,
                 "Jay1": 8, "Jay8": 9, "Fernan10": 10, "Fernan9": 11, "Fernan1": 12, "Julio5": 13, "Julio6": 14,
                 "Jay2": 15, "Unknown7": 16, "Julio7": 17, "VladiY": 18, "Fernan29": 19, "Kofi": 20, "Unknown4": 21,
-                "Ruk": 22, "Fernan2": 23, "Fernan3": 24, "Fernan14": 25, "Pain3": 26, "Nell": 27
-                , "Shiroe": 28, "Pak": 29, "Pain1": 30, "Unknown1": 31, "Unknown2": 32, "Masiel1": 33, "Jay9": 34,
-                "Fernan21": 35, "Smith": 36, "Junior": 37, "Azur": 38, "Unknown6": 38, "Masiel": 39, "Gato": 40,
-                "Fernan30": 41, "Ceeb": 42, "Unknow3": 43, "Ciri": 44, "Fernan17": 45, "Pain10": 46
+                "Trinity2": 22, "Fernan2": 23, "Fernan3": 24, "Fernan14": 25, "Pain3": 26, "Nell": 27
+                , "Trinity1": 28, "Fernan39": 29, "Pain1": 30, "Unknown1": 31, "Unknown2": 32, "Masiel1": 33, "Jay9": 34,
+                "Fernan21": 35, "Smith": 36, "Trinity6": 37, "Azur": 38, "Unknown6": 38, "Masiel": 39, "Gato": 40,
+                "Fernan30": 41, "Ceeb": 42, "Unknow3": 43, "Trinity5": 44, "Fernan17": 45, "Pain10": 46
                 , "Unknown3": 47, "Julio2": 48, "Unknow2": 49, "Fernan4": 50, "Fernan5": 51, "Fernan6": 52, "Pain9": 53,
-                "Ceeb1": 54, "Pain6": 55, "Unknown5": 56, "Jay4": 57, "Unknow1": 58, "Ruk2": 59, "Hassan": 60,
-                "Pain2": 61, "Ruk1": 62, "Fernan13": 63, "Fernan7": 64, "Fernan8": 65, "Unknow": 66, "Kofi2": 67,
-                "Fernan16": 68, "Jay7": 69, "Jay6": 70, "Jay5": 71, "Fernan15": 72, "Julio15": 73, "Jay3": 74,
-                "Lu": 75, "Koki": 76, "Koki1": 77, "Koki3": 78, "Fernan18": 79,  "Fernan19": 80, "Jay10": 81, "Shiroe1": 82, "Fernan24": 83,
-                "Nobody2": 84, "Nobody1": 85, "Nobody": 86, "Fernan41": 87, "Fernan40": 88, "Trinity7": 89, "Nobody3": 90, "Tsuna8": 91, "Tsuna9": 92,
-                "Tsuna10": 93, "Tsuna11": 94, "Tsuna12": 95, "Fernan25": 96, "Fernan23": 97, "Fernan26": 98,  "Fernan27": 99,
-                "Fernan28": 100, "Fernan33": 101, "Fernan32": 102, "Fernan34": 103, "Fernan35": 104, "Fernan36":105,
-                "Fernan37": 106, "Fernan38": 107, "A1": 108, "A2": 109, "A3": 110, "A4": 111, "Kofi3": 112, "Fernan39": 113, "Trinity1": 114, "Trinity2": 115, "Trinity3": 116,
-                "Trinity4": 117, "Trinity5": 118, "Trinity6": 119}
+                "Ceeb1": 54, "Pain6": 55, "Unknown5": 56, "Fernan27": 57, "Unknow1": 58, "Fernan28": 59,
+                "Pain2": 61, "Fernan33": 62, "Fernan13": 63, "Fernan7": 64, "Fernan8": 65, "Unknow": 66, "Kofi2": 67,
+                "Fernan16": 68, "Jay7": 69, "Jay6": 70, "Jay5": 71, "Fernan15": 72, "A2": 73, "Jay3": 74,
+                "Lu": 75, "Koki": 76, "Koki1": 77, "Koki3": 78, "Fernan18": 79,  "Fernan19": 80, "Jay10": 81, "A1": 82, "Fernan24": 83,
+                "Nobody2": 84, "Nobody1": 85, "Nobody": 86, "Fernan41": 87, "Fernan40": 88, "Trinity7": 89, "Nobody3": 90, "Fernan38": 91, "Fernan37": 92,
+                "Fernan36": 93, "Fernan35": 94, "Fernan34": 95, "Fernan25": 96, "Fernan32": 97, "Fernan26": 98}
 #Alistar solo
 #Masiel
-usersCharacter: dict = {"Zero2": 0, "Mahalo1": 1, "Sleep": 2, "Jean4": 3, "Zero": 4, "Mask": 5, "Julio2": 6, "Negan1": 7,
-                  "Naruto": 8, "Dani1": 9, "Masiel": 9, "Jean": 10, "Yoama": 11, "Fernan14": 12, "Naav": 13, "Fernan17": 14,
-                  "Jean2": 15, "Fernan16": 16, "Julio7": 17, "Julio4": 18, "Julio5": 19, "Julio6": 20, "Unknown": 21, "Negan": 22, "DraX":23,
-				  "Trinity1": 24, "Trinity2": 25, "Trinity3": 26, "Trinity4": 27, "Trinity5": 28, "Trinity6": 29, "Trinity7": 30, "Nobody": 31, "Nobody1": 32, "Nobody2": 33,
-				  "Nobody3": 34}
+usersCharacter: dict = {"Trinity7": 0, "Mahalo1": 1, "Sleep": 2, "Jean4": 3, "Trinity4": 4, "Mask": 5, "Julio2": 6, "Negan1": 7,
+                  "Naruto": 8, "Dani1": 9, "Masiel": 9, "Jean": 10, "Yoama": 11, "Fernan14": 12, "Trinity3": 13, "Fernan17": 14,
+                  "Jean2": 15, "Fernan16": 16, "Julio7": 17, "Trinity2": 18, "Julio5": 19, "Julio6": 20, "Unknown": 21, "Negan": 22, "DraX":23,
+				  "Trinity1": 24}
 usersCW3 = {}
 guild_extraction = {}#"Mask": "1674483077"} {"Pain1": "1656339328"}#"Legendary": "1383884691"}
 snipping = {}#"Godfather": 1}
@@ -114,11 +110,11 @@ id_arrays = {"me": me, "meService": meService, "meCharacter": meCharacter}
 stop = False
 fightsFromGuild = {"Yoama": False, "Trinity1": False, "Dani1": False, "Force2": False, "Naruto": False, "DraX": False,
                    "Hacha": False, "Jean": False, "Trinity2": False, "Mask": False, "Blaze": False, "Jean1": False,
-                    "Zero": False, "Sylvanna": False, "Force": False, "Legendary2": False, "Fernan14": False,
-                   "Naav": False, "Masiel": False, "Nico": False, "Deadpool": False, "Legendary": False,
+                   "Sylvanna": False, "Force": False, "Legendary2": False, "Fernan14": False,
+                   "Masiel": False, "Nico": False, "Deadpool": False, "Legendary": False,
                    "Sleep": False, "Julio4": False, "Julio5": False, "Julio6": False, "Julio7": False,
                    "Julio8": False, "Nico2": False, "Nico3": False, "Fernan16": False, "Unknown": False, "Kirito": False,
-                   "Zero2": False, "Yoan": False, "Unknown1": False, "Unknown2": False, "Unknown3": False,
+                   "Yoan": False, "Unknown1": False, "Unknown2": False, "Unknown3": False,
                    "Unknown4": False, "Unknown5": False,"Fernan13": False, "Negan": False, "Fernan17": False, "Negan1": False,
                    "Jean2": False, "Jean4": False, "Mahalo1": False, "Fernan20": False, "Trinity3": False, "Trinity4": False, "Trinity5": False, "Trinity6": False, "Trinity7": False}
 
@@ -596,7 +592,7 @@ async def setupScript(clients_str, user, me_array, txt1):
     elif "/fernan_orders" in txt1 and user == "Fernan1":
         for c in alts_service.keys():
             try:
-                if "Fernan" in c and "Fernan23" not in c:
+                if "Fernan" in c:
                     await alts_service[c].send_message("botniatobot", "/order")
                     await asyncio.sleep(random.randint(3, 6))
             except Exception as e:
@@ -607,7 +603,7 @@ async def setupScript(clients_str, user, me_array, txt1):
         castle_order = txt1.split(" ")[1]
         for c in alts_service.keys():
             try:
-                if "Fernan" in c and "Fernan23" not in c:
+                if "Fernan" in c:
                     await alts_service[c].send_message('chtwrsbot', "⚔️Attack")
                     await asyncio.sleep(random.randint(2, 3))
                     await alts_service[c].send_message("chtwrsbot", castle_order)
@@ -620,7 +616,7 @@ async def setupScript(clients_str, user, me_array, txt1):
         command = txt1.split(" ")[1]
         for c in alts_service.keys():
             try:
-                if "Fernan" in c and "Fernan23" not in c:
+                if "Fernan" in c:
                     await alts_service[c].send_message("chtwrsbot", command)
                     await asyncio.sleep(random.randint(3, 6))
             except Exception as e:
@@ -1074,7 +1070,7 @@ async def cw_event(clients_str, user, me_array, event):
         elif get_config_parameter("Permission", id_arrays[me_array][user], "quest"):
             await asyncio.sleep(random.randint(10, 12))
             quest_click = get_config_parameter("Config", id_arrays[me_array][user], "quest")
-            if "Fernan" in user or "A1" == user or "A2" == user or "A3" == user or "A4" == user:
+            if "Fernan" in user or "A1" == user or "A2" == user:
                 quest_click = random.randint(0, 2)
             await event.click(quest_click)
     # Arena
@@ -1661,35 +1657,6 @@ for i in alts:
 for i in alts_service:
     exec(cli_task.format(i, "alts_service", "meService"))
 exec(cli_task2.format(seller))
-
-try:
-    @clientHassan.on(events.NewMessage(chats=(1001324344044)))
-    async def event_catchOrdersUrbanFernanHassan(event):
-        if event.text is not None:
-            m = event.text + "\nButtons:"
-            if (event.button_count > 0):
-                for btLine in event.buttons:
-                    for bt in btLine:
-                        m += '\n' + bt.text
-            m += "\nUrban"
-            await clientAdmin.send_message("me", m)
-            await clientFernan1.send_message("Abogada96", m)
-except Exception as e:
-    print(e)
-try:
-    @clientFernan23.on(events.NewMessage(chats=(1001616554837)))
-    async def event_catchOrdersUrbanFernanAnn(event):
-        if event.text is not None:
-            m = event.text + "\nButtons:"
-            if (event.button_count > 0):
-                for btLine in event.buttons:
-                    for bt in btLine:
-                        m += '\n' + bt.text
-            m += "\nAnn"
-            await clientAdmin.send_message("me", m)
-            await clientFernan1.send_message("Abogada96", m)
-except Exception as e:
-    print(e)
 
 ##################################################################################
 #                                        Extracciones
