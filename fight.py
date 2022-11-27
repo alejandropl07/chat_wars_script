@@ -90,7 +90,7 @@ alts_service: dict = {"Fernan11": 0, "Smith1": 1, "Unknown": 2, "Fernan22": 3, "
                 "Fernan16": 68, "Jay7": 69, "Jay6": 70, "Jay5": 71, "Fernan15": 72, "A2": 73, "Jay3": 74,
                 "Lu": 75, "Koki": 76, "Koki1": 77, "Koki3": 78, "Fernan18": 79,  "Fernan19": 80, "Jay10": 81, "A1": 82, "Fernan24": 83,
                 "Nobody2": 84, "Nobody1": 85, "Nobody": 86, "Fernan41": 87, "Fernan40": 88, "Trinity7": 89, "Nobody3": 90, "Fernan38": 91, "Fernan37": 92,
-                "Fernan36": 93, "Fernan35": 94, "Fernan34": 95, "Fernan25": 96, "Fernan32": 97, "Fernan26": 98}
+                "Fernan36": 93, "Fernan35": 94, "Fernan34": 95, "Fernan25": 96, "Fernan32": 97, "Fernan26": 98, "Jay4": 99}
 #Alistar solo
 #Masiel
 usersCharacter: dict = {"Trinity7": 0, "Mahalo1": 1, "Sleep": 2, "Jean4": 3, "Trinity4": 4, "Mask": 5, "Julio2": 6, "Negan1": 7,
@@ -626,7 +626,7 @@ async def setupScript(clients_str, user, me_array, txt1):
     elif "/orders" in txt1 and user == "Jay7":
         for c in alts_service.keys():
             try:
-                if "Jay" in c and "Jay2" not in c and "Jay3" not in c:
+                if "Jay" in c: #  and "Jay2" not in c and "Jay3" not in c
                     await alts_service[c].send_message("chtwrsbot", "/g_def")
                     await asyncio.sleep(random.randint(3, 6))
             except Exception as e:
@@ -1349,7 +1349,7 @@ async def handlerCommands(clients_str, user, txt, me_array):
                 await clients[clients_str][user].send_message('chtwrsbot', "/use_crl")
             elif user != "VladiY" and user != "Kisame" and "Julio" not in user:
                 m = []
-                if "Force" in user:
+                if "Jay" in user:
                     await clients[clients_str][user].send_message('chtwrsbot', "/g_def")
                 elif "Trinity" in user:
                     await clients[clients_str][user].send_message('chtwrsbot', "⚔Attack")
