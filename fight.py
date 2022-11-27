@@ -89,20 +89,17 @@ alts_service: dict = {"Fernan11": 0, "Smith1": 1, "Unknown": 2, "Fernan22": 3, "
                 "Pain2": 61, "Fernan33": 62, "Fernan13": 63, "Fernan7": 64, "Fernan8": 65, "Unknow": 66, "Kofi2": 67,
                 "Fernan16": 68, "Jay7": 69, "Jay6": 70, "Jay5": 71, "Fernan15": 72, "A2": 73, "Jay3": 74,
                 "Lu": 75, "Koki": 76, "Koki1": 77, "Koki3": 78, "Fernan18": 79,  "Fernan19": 80, "Jay10": 81, "A1": 82, "Fernan24": 83,
-                "Fernan35": 84, "Fernan34": 85, "Fernan25": 86, "Fernan41": 87, "Fernan40": 88, "Trinity7": 89, "Fernan36": 90, "Fernan37": 91,
-                "Fernan38": 92}
+                "Fernan35": 84, "Fernan34": 85, "Fernan25": 86, "Fernan41": 87, "Fernan40": 88, "Trinity7": 89, "Fernan36": 90, "Fernan37": 91}
 #Alistar solo
 #Masiel
 usersCharacter: dict = {"Trinity7": 0, "Mahalo1": 1, "Sleep": 2, "Jean4": 3, "Trinity4": 4, "Mask": 5, "Julio2": 6, "Negan1": 7,
                   "Naruto": 8, "Dani1": 9, "Masiel": 9, "Jean": 10, "Yoama": 11, "Fernan14": 12, "Trinity3": 13, "Trinity1": 14,
                   "Jean2": 15, "Fernan16": 16, "Julio7": 17, "Trinity2": 18, "Julio5": 19, "Julio6": 20, "Unknown": 21, "Negan": 22, "DraX":23}
 #intervine script migration
-intervine_users = {"Jose1": 0, "Deadpool": 1, "Assasin": 2, "Yo": 3, "Jean1": 4, "Jose": 5,
-                   "Jean6": 6, "Jean8": 7, "Mary": 8, "Jean9": 9, "Auri": 10, "Junior": 11, "Jean5": 12,
-                   "Tiger": 13, "Erisbel": 14, "God": 15, "Lai": 16, "Jean10": 17, "Kylore": 18, "Smith2": 19,
-                   "Dark": 20, "Jean7": 21, "Arthas": 22, "Ciri": 23, "Jean3": 24, "Albert": 25,  "Smith3": 26,
-                   "Naruto1": 27, "FernanI1": 28, "FernanI2": 29, "FernanI3": 30,  "FernanI4": 31, "FernanI5": 32, "Alexis": 33,
-                   "Koki2": 34}
+intervine_users = {"Koki2": 0, "Deadpool": 1, "Assasin": 2, "Yo": 3, "Jean1": 4, "Alexis": 5,
+                   "FernanI5": 6, "Jean8": 7, "FernanI4": 8, "Jean9": 9, "Auri": 10, "FernanI3": 11, "Jean5": 12,
+                   "Tiger": 13, "Erisbel": 14, "FernanI2": 15, "FernanI1": 16, "Jean10": 17, "Kylore": 18, "Smith2": 19,
+                   "Naruto1": 20, "Smith3": 21, "Jean3": 22}
 trader = {"Hacha": "07", "Fernan2": "07", "Fernan1": "07", "Fernan3": "07", "Fernan4": "07", "Fernan5": "07"}
 usersCW3 = {}
 guild_extraction = {}#"Mask": "1674483077"} {"Pain1": "1656339328"}#"Legendary": "1383884691"}
