@@ -58,7 +58,7 @@ blacklist_monsters_chats = {"Nobody3": ["chtwrsbot"],"Force2": ["chtwrsbot"],
                             "Nico3": ["chtwrsbot"], "Julio5": ["chtwrsbot"],
                             "Julio6": ["chtwrsbot"], "Julio7": ["chtwrsbot"],
                             "Nico2": ["chtwrsbot"], "Yoandris": ["chtwrsbot"], "Julio2": ["chtwrsbot"],
-                            "Deadpool": ["chtwrsbot"], "Sleep": ["chtwrsbot"], "Unknown": ["chtwrsbot"], "Kirito": ["chtwrsbot"],
+                             "Sleep": ["chtwrsbot"], "Unknown": ["chtwrsbot"], "Kirito": ["chtwrsbot"],
                              "Naruto": ["chtwrsbot"],
                             "Unknown1": ["chtwrsbot"], "Unknown2": ["chtwrsbot"], "Unknown3": ["chtwrsbot"]
                             , "Unknown4": ["chtwrsbot"], "Unknown5": ["chtwrsbot"],"Fernan13": ["chtwrsbot"], "Negan": ["chtwrsbot"],
@@ -89,12 +89,21 @@ alts_service: dict = {"Fernan11": 0, "Smith1": 1, "Unknown": 2, "Fernan22": 3, "
                 "Pain2": 61, "Fernan33": 62, "Fernan13": 63, "Fernan7": 64, "Fernan8": 65, "Unknow": 66, "Kofi2": 67,
                 "Fernan16": 68, "Jay7": 69, "Jay6": 70, "Jay5": 71, "Fernan15": 72, "A2": 73, "Jay3": 74,
                 "Lu": 75, "Koki": 76, "Koki1": 77, "Koki3": 78, "Fernan18": 79,  "Fernan19": 80, "Jay10": 81, "A1": 82, "Fernan24": 83,
-                "Fernan35": 84, "Fernan34": 85, "Fernan25": 86, "Fernan41": 87, "Fernan40": 88, "Trinity7": 89, "Fernan36": 90, "Fernan37": 91}
+                "Fernan35": 84, "Fernan34": 85, "Fernan25": 86, "Fernan41": 87, "Fernan40": 88, "Trinity7": 89, "Fernan36": 90, "Fernan37": 91,
+                "Fernan38": 92}
 #Alistar solo
 #Masiel
 usersCharacter: dict = {"Trinity7": 0, "Mahalo1": 1, "Sleep": 2, "Jean4": 3, "Trinity4": 4, "Mask": 5, "Julio2": 6, "Negan1": 7,
                   "Naruto": 8, "Dani1": 9, "Masiel": 9, "Jean": 10, "Yoama": 11, "Fernan14": 12, "Trinity3": 13, "Trinity1": 14,
                   "Jean2": 15, "Fernan16": 16, "Julio7": 17, "Trinity2": 18, "Julio5": 19, "Julio6": 20, "Unknown": 21, "Negan": 22, "DraX":23}
+#intervine script migration
+intervine_users = {"Jose1": 0, "Deadpool": 1, "Assasin": 2, "Yo": 3, "Jean1": 4, "Jose": 5,
+                   "Jean6": 6, "Jean8": 7, "Mary": 8, "Jean9": 9, "Auri": 10, "Junior": 11, "Jean5": 12,
+                   "Tiger": 13, "Erisbel": 14, "God": 15, "Lai": 16, "Jean10": 17, "Kylore": 18, "Smith2": 19,
+                   "Dark": 20, "Jean7": 21, "Arthas": 22, "Ciri": 23, "Jean3": 24, "Albert": 25,  "Smith3": 26,
+                   "Naruto1": 27, "FernanI1": 28, "FernanI2": 29, "FernanI3": 30,  "FernanI4": 31, "FernanI5": 32, "Alexis": 33,
+                   "Koki2": 34}
+trader = {"Hacha": "07", "Fernan2": "07", "Fernan1": "07", "Fernan3": "07", "Fernan4": "07", "Fernan5": "07"}
 usersCW3 = {}
 guild_extraction = {}#"Mask": "1674483077"} {"Pain1": "1656339328"}#"Legendary": "1383884691"}
 snipping = {}#"Godfather": 1}
@@ -109,7 +118,7 @@ stop = False
 fightsFromGuild = {"Yoama": False, "Trinity1": False, "Dani1": False, "Force2": False, "Naruto": False, "DraX": False,
                    "Hacha": False, "Jean": False, "Trinity2": False, "Mask": False, "Blaze": False, "Jean1": False,
                    "Sylvanna": False, "Force": False, "Legendary2": False, "Fernan14": False,
-                   "Masiel": False, "Nico": False, "Deadpool": False, "Legendary": False,
+                   "Masiel": False, "Nico": False, "Legendary": False,
                    "Sleep": False, "Julio4": False, "Julio5": False, "Julio6": False, "Julio7": False,
                    "Julio8": False, "Nico2": False, "Nico3": False, "Fernan16": False, "Unknown": False, "Kirito": False,
                    "Yoan": False, "Unknown1": False, "Unknown2": False, "Unknown3": False,
@@ -181,6 +190,8 @@ for i in usersCW3:
     exec(cli_start.format(i, "usersCW3"))
 for i in snipping:
     exec(cli_start.format(i, "snipping"))
+for i in intervine_users:
+    exec(cli_start.format(i, "intervine_users"))
 
 
 ##################################################################################
@@ -2480,6 +2491,66 @@ except NameError:
     print("NameError")
 """
 
+cli_taskIntervine = """
+@client{0}.on(events.NewMessage(chats=('chtwrsbot')))
+async def my_event_handlerCW_{0}(event):
+    loop.create_task(cw_eventIntervine("{0}",event))
+
+if "{0}" == "Smith" or "{0}" == "Smith1":
+    @client{0}.on(events.NewMessage(chats=('ChatWarsBot')))
+    async def my_event_handlerCW3_{0}(event):
+        loop.create_task(cw_eventCharacters3("{0}",event))
+
+"""
+async def cw_eventIntervine(user, event):
+    # Intervine
+    if 'You were strolling around on your horse when you noticed' in event.raw_text:
+        r = await intervine_users[user].get_messages("ScriptCWBot", limit=1)
+        try:
+            if len(r) > 0 and "/stop_intervine" in r[0].raw_text:
+                return
+        except Exception:
+            print("No message in config bot")
+        wait_time = random.randint(5, 60)
+        await asyncio.sleep(wait_time)
+        await event.click(0)
+    if 'You successfully defeated' in event.raw_text:
+        await event.forward_to('ForaySpaiBot')
+    if 'You tried stopping' in event.raw_text:
+        await event.forward_to('ForaySpaiBot')
+    # Get pledge
+    if "After a successful act" in event.raw_text:
+        wait_time = random.randint(10, 20)
+        await asyncio.sleep(wait_time)
+        await intervine_users[user].send_message('chtwrsbot', "/pledge")
+    if 'You defended villagers well. In exchange for your help,' in event.raw_text\
+            and (user == "Hacha" or "Jean" in user or "Naruto1" in user or "Fernan" in user or "Deadpool" in user or "Koki1" in user):
+        cant = event.raw_text.split("carry ")[1].split(".")[0]
+        wait_time = random.randint(5, 10)
+        await asyncio.sleep(wait_time)
+        if user in trader:
+            await intervine_users[user].send_message("chtwrsbot", f"/sc {trader[user]} {cant}")
+        else:
+            r = await intervine_users[user].get_messages("ScriptCWBot", limit=1)
+            await intervine_users[user].send_message("chtwrsbot", f"/sc {r[0].raw_text} {cant}")
+
+
+async def cw_eventCharacters3(user, event):
+    if 'Ты заметил' in event.raw_text:
+        wait_time = random.randint(5, 60)
+        await asyncio.sleep(wait_time)
+        await event.click(0)
+    if 'You defended villagers well. In exchange for your help,' in event.raw_text:
+        cant = event.raw_text.split("carry ")[1].split(".")[0]
+        wait_time = random.randint(5, 10)
+        await asyncio.sleep(wait_time)
+        if user in trader:
+            await intervine_users[user].send_message("ChatWarsBot", f"/sc {trader[user]} {cant}")
+        else:
+            r = await intervine_users[user].get_messages("ScriptCWBot", limit=1)
+            await intervine_users[user].send_message("ChatWarsBot", f"/sc {r[0].raw_text} {cant}")
+
+
 
 for user in usersCharacter:
     exec(cli_taskCharacters.format(user, "meCharacter"))
@@ -2487,6 +2558,8 @@ for user in usersCW3:
     exec(cli_taskCW3.format(user, "meService"))
 for item in advisers:
     exec(adviser_task.format(item))
+for i in intervine_users:
+    exec(cli_taskIntervine.format(i))
 #for item in alts_group:
 #    exec(alts_group_task.format(item))
 
