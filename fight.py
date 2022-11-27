@@ -812,6 +812,9 @@ Pulse /restart para restablecer valores"""
             if u in alts_service:
                 myself = await alts_service[u].get_me()
                 await clients[clients_str][user].send_message('ScriptCWBot', str(myself.phone) + " " + u)
+            elif u in intervine_users:
+                myself = await intervine_users[u].get_me()
+                await clients[clients_str][user].send_message('ScriptCWBot', str(myself.phone) + " " + u)
             elif u in usersCharacter:
                 myself = await usersCharacter[u].get_me()
                 await clients[clients_str][user].send_message('ScriptCWBot', str(myself.phone) + " " + u)
@@ -836,6 +839,9 @@ Pulse /restart para restablecer valores"""
             u = txt1.split(" ")[1]
             if u in alts_service:
                 myself = await alts_service[u].get_me()
+                await clients[clients_str][user].send_message('ScriptCWBot', "@" + str(myself.username) + " " + u)
+            elif u in intervine_users:
+                myself = await intervine_users[u].get_me()
                 await clients[clients_str][user].send_message('ScriptCWBot', "@" + str(myself.username) + " " + u)
             elif u in usersCharacter:
                 myself = await usersCharacter[u].get_me()
