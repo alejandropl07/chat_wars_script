@@ -63,8 +63,8 @@ blacklist_monsters_chats = {"Nobody3": ["chtwrsbot"],"Force2": ["chtwrsbot"],
                             "Unknown1": ["chtwrsbot"], "Unknown2": ["chtwrsbot"], "Unknown3": ["chtwrsbot"]
                             , "Unknown4": ["chtwrsbot"], "Unknown5": ["chtwrsbot"],"Fernan13": ["chtwrsbot"], "Negan": ["chtwrsbot"],
                             "Fernan17": ["chtwrsbot"], "Negan1":["chtwrsbot"], "Mahalo1": ["chtwrsbot"], "Fernan16": ["chtwrsbot"], "Nobody2": ["chtwrsbot"], "Trinity1": ["chtwrsbot"],
-                          "Trinity2": ["chtwrsbot"], "Trinity3": ["chtwrsbot"], "Trinity4": ["chtwrsbot"], "Trinity5": ["chtwrsbot"],
-                          "Trinity6": ["chtwrsbot"], "Trinity7": ["chtwrsbot"], "Nobody1": ["chtwrsbot"],
+                          "Trinity2": ["chtwrsbot"], "Trinity3": ["chtwrsbot"], "Trinity4": ["chtwrsbot"],
+                           "Trinity7": ["chtwrsbot"], "Nobody1": ["chtwrsbot"],
                            "Nobody": ["chtwrsbot"], "DraX": ["chtwrsbot"]}
 forward_chat = "MyFirst96_bot"
 personal_chat = "TheRealEirvain"
@@ -81,22 +81,20 @@ alts_service: dict = {"Fernan11": 0, "Smith1": 1, "Unknown": 2, "Fernan22": 3, "
                 "Jay1": 8, "Jay8": 9, "Fernan10": 10, "Fernan9": 11, "Fernan1": 12, "Julio5": 13, "Julio6": 14,
                 "Jay2": 15, "Unknown7": 16, "Julio7": 17, "VladiY": 18, "Fernan29": 19, "Kofi": 20, "Unknown4": 21,
                 "Trinity2": 22, "Fernan2": 23, "Fernan3": 24, "Fernan14": 25, "Pain3": 26, "Nell": 27
-                , "Trinity1": 28, "Fernan39": 29, "Pain1": 30, "Unknown1": 31, "Unknown2": 32, "Masiel1": 33, "Jay9": 34,
-                "Fernan21": 35, "Smith": 36, "Trinity6": 37, "Azur": 38, "Unknown6": 38, "Masiel": 39, "Gato": 40,
-                "Fernan30": 41, "Ceeb": 42, "Unknow3": 43, "Trinity5": 44, "Fernan17": 45, "Pain10": 46
+                , "Trinity1": 28, "Fernan39": 29, "Jay4": 30, "Unknown1": 31, "Unknown2": 32, "Masiel1": 33, "Jay9": 34,
+                "Fernan21": 35, "Smith": 36, "Fernan32": 37, "Azur": 38, "Unknown6": 38, "Masiel": 39, "Gato": 40,
+                "Fernan30": 41, "Ceeb": 42, "Unknow3": 43, "Fernan26": 44, "Fernan17": 45, "Pain10": 46
                 , "Unknown3": 47, "Julio2": 48, "Unknow2": 49, "Fernan4": 50, "Fernan5": 51, "Fernan6": 52, "Pain9": 53,
                 "Ceeb1": 54, "Pain6": 55, "Unknown5": 56, "Fernan27": 57, "Unknow1": 58, "Fernan28": 59,
                 "Pain2": 61, "Fernan33": 62, "Fernan13": 63, "Fernan7": 64, "Fernan8": 65, "Unknow": 66, "Kofi2": 67,
                 "Fernan16": 68, "Jay7": 69, "Jay6": 70, "Jay5": 71, "Fernan15": 72, "A2": 73, "Jay3": 74,
                 "Lu": 75, "Koki": 76, "Koki1": 77, "Koki3": 78, "Fernan18": 79,  "Fernan19": 80, "Jay10": 81, "A1": 82, "Fernan24": 83,
-                "Nobody2": 84, "Nobody1": 85, "Nobody": 86, "Fernan41": 87, "Fernan40": 88, "Trinity7": 89, "Nobody3": 90, "Fernan38": 91, "Fernan37": 92,
-                "Fernan36": 93, "Fernan35": 94, "Fernan34": 95, "Fernan25": 96, "Fernan32": 97, "Fernan26": 98, "Jay4": 99}
+                "Fernan35": 84, "Fernan34": 85, "Fernan25": 86, "Fernan41": 87, "Fernan40": 88, "Trinity7": 89, "Fernan36": 90, "Fernan37": 91}
 #Alistar solo
 #Masiel
 usersCharacter: dict = {"Trinity7": 0, "Mahalo1": 1, "Sleep": 2, "Jean4": 3, "Trinity4": 4, "Mask": 5, "Julio2": 6, "Negan1": 7,
-                  "Naruto": 8, "Dani1": 9, "Masiel": 9, "Jean": 10, "Yoama": 11, "Fernan14": 12, "Trinity3": 13, "Fernan17": 14,
-                  "Jean2": 15, "Fernan16": 16, "Julio7": 17, "Trinity2": 18, "Julio5": 19, "Julio6": 20, "Unknown": 21, "Negan": 22, "DraX":23,
-				  "Trinity1": 24}
+                  "Naruto": 8, "Dani1": 9, "Masiel": 9, "Jean": 10, "Yoama": 11, "Fernan14": 12, "Trinity3": 13, "Trinity1": 14,
+                  "Jean2": 15, "Fernan16": 16, "Julio7": 17, "Trinity2": 18, "Julio5": 19, "Julio6": 20, "Unknown": 21, "Negan": 22, "DraX":23}
 usersCW3 = {}
 guild_extraction = {}#"Mask": "1674483077"} {"Pain1": "1656339328"}#"Legendary": "1383884691"}
 snipping = {}#"Godfather": 1}
@@ -116,7 +114,7 @@ fightsFromGuild = {"Yoama": False, "Trinity1": False, "Dani1": False, "Force2": 
                    "Julio8": False, "Nico2": False, "Nico3": False, "Fernan16": False, "Unknown": False, "Kirito": False,
                    "Yoan": False, "Unknown1": False, "Unknown2": False, "Unknown3": False,
                    "Unknown4": False, "Unknown5": False,"Fernan13": False, "Negan": False, "Fernan17": False, "Negan1": False,
-                   "Jean2": False, "Jean4": False, "Mahalo1": False, "Fernan20": False, "Trinity3": False, "Trinity4": False, "Trinity5": False, "Trinity6": False, "Trinity7": False}
+                   "Jean2": False, "Jean4": False, "Mahalo1": False, "Fernan20": False, "Trinity3": False, "Trinity4": False, "Trinity7": False}
 
 # Click bots
 messages = ['🤖 Message bots', '📣 Join chats']  # ,'🖥 Visit sites',
