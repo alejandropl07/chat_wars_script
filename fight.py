@@ -79,17 +79,17 @@ alts = {}
 #Masiel1, Masiel
 alts_service: dict = {"Fernan11": 0, "Smith1": 1, "Unknown": 2, "Fernan22": 3, "Fernan12": 4, "Trinity4": 5, "Trinity3": 6, "Fernan31": 7,
                 "Jay1": 8, "Jay8": 9, "Fernan10": 10, "Fernan9": 11, "Fernan1": 12, "Julio5": 13, "Julio6": 14,
-                "Jay2": 15, "Unknown7": 16, "Julio7": 17, "VladiY": 18, "Fernan29": 19, "Kofi": 20, "Unknown4": 21,
+                "Jay2": 15, "Unknown7": 16, "Julio7": 17, "VladiY": 18, "Fernan29": 19, "Fernan37": 20, "Unknown4": 21,
                 "Trinity2": 22, "Fernan2": 23, "Fernan3": 24, "Fernan14": 25, "Pain3": 26, "Nell": 27
                 , "Trinity1": 28, "Fernan39": 29, "Jay4": 30, "Unknown1": 31, "Unknown2": 32, "Masiel1": 33, "Jay9": 34,
                 "Fernan21": 35, "Smith": 36, "Fernan32": 37, "Azur": 38, "Unknown6": 38, "Masiel": 39, "Gato": 40,
                 "Fernan30": 41, "Ceeb": 42, "Unknow3": 43, "Fernan26": 44, "Fernan17": 45, "Pain10": 46
                 , "Unknown3": 47, "Julio2": 48, "Unknow2": 49, "Fernan4": 50, "Fernan5": 51, "Fernan6": 52, "Pain9": 53,
                 "Ceeb1": 54, "Pain6": 55, "Unknown5": 56, "Fernan27": 57, "Unknow1": 58, "Fernan28": 59,
-                "Pain2": 61, "Fernan33": 62, "Fernan13": 63, "Fernan7": 64, "Fernan8": 65, "Unknow": 66, "Kofi2": 67,
+                "Pain2": 61, "Fernan33": 62, "Fernan13": 63, "Fernan7": 64, "Fernan8": 65, "Unknow": 66, "Fernan36": 67,
                 "Fernan16": 68, "Jay7": 69, "Jay6": 70, "Jay5": 71, "Fernan15": 72, "A2": 73, "Jay3": 74,
                 "Lu": 75, "Koki": 76, "Koki1": 77, "Koki3": 78, "Fernan18": 79,  "Fernan19": 80, "Jay10": 81, "A1": 82, "Fernan24": 83,
-                "Fernan35": 84, "Fernan34": 85, "Fernan25": 86, "Fernan41": 87, "Fernan40": 88, "Trinity7": 89, "Fernan36": 90, "Fernan37": 91}
+                "Fernan35": 84, "Fernan34": 85, "Fernan25": 86, "Fernan41": 87, "Fernan40": 88, "Trinity7": 89, "": 90}
 #Alistar solo
 #Masiel
 usersCharacter: dict = {"Trinity7": 0, "Mahalo1": 1, "Sleep": 2, "Jean4": 3, "Trinity4": 4, "Mask": 5, "Julio2": 6, "Negan1": 7,
@@ -100,7 +100,7 @@ intervine_users = {"Koki2": 0, "Deadpool": 1, "Assasin": 2, "Yo": 3, "Jean1": 4,
                    "FernanI5": 6, "Jean8": 7, "FernanI4": 8, "Jean9": 9, "Auri": 10, "FernanI3": 11, "Jean5": 12,
                    "Tiger": 13, "Erisbel": 14, "FernanI2": 15, "FernanI1": 16, "Jean10": 17, "Jean3": 18, "Smith2": 19,
                    "Naruto1": 20, "Smith3": 21}
-trader = {"Hacha": "07", "Fernan2": "07", "Fernan1": "07", "Fernan3": "07", "Fernan4": "07", "Fernan5": "07"}
+trader = {"Fernan2": "07", "Fernan1": "07", "Fernan3": "07", "Fernan4": "07", "Fernan5": "07"}
 usersCW3 = {}
 guild_extraction = {}#"Mask": "1674483077"} {"Pain1": "1656339328"}#"Legendary": "1383884691"}
 snipping = {}#"Godfather": 1}
@@ -113,7 +113,7 @@ meCharacter = {}
 id_arrays = {"me": me, "meService": meService, "meCharacter": meCharacter}
 stop = False
 fightsFromGuild = {"Yoama": False, "Trinity1": False, "Dani1": False, "Force2": False, "Naruto": False, "DraX": False,
-                   "Hacha": False, "Jean": False, "Trinity2": False, "Mask": False, "Blaze": False, "Jean1": False,
+                   "Jean": False, "Trinity2": False, "Mask": False, "Blaze": False, "Jean1": False,
                    "Sylvanna": False, "Force": False, "Legendary2": False, "Fernan14": False,
                    "Masiel": False, "Nico": False, "Legendary": False,
                    "Sleep": False, "Julio4": False, "Julio5": False, "Julio6": False, "Julio7": False,
@@ -2527,7 +2527,7 @@ async def cw_eventIntervine(user, event):
         await asyncio.sleep(wait_time)
         await intervine_users[user].send_message('chtwrsbot', "/pledge")
     if 'You defended villagers well. In exchange for your help,' in event.raw_text\
-            and (user == "Hacha" or "Jean" in user or "Naruto1" in user or "Fernan" in user or "Deadpool" in user or "Koki1" in user):
+            and ("Jean" in user or "Naruto1" in user or "Fernan" in user or "Deadpool" in user or "Koki1" in user):
         cant = event.raw_text.split("carry ")[1].split(".")[0]
         wait_time = random.randint(5, 10)
         await asyncio.sleep(wait_time)
