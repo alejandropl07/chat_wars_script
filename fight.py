@@ -135,7 +135,8 @@ file.close()
 file = open("items.json")
 items = json.load(file)
 file.close()
-
+print('EEEEEEEEEEEE')
+print(os.environ)
 DATABASE_URL = os.environ['DATABASE_URL']
 engine = create_engine(DATABASE_URL)
 metadata = MetaData()
