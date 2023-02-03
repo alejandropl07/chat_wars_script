@@ -65,7 +65,7 @@ blacklist_monsters_chats = {"Nobody3": ["chtwrsbot"],"Force2": ["chtwrsbot"],
                             "Fernan17": ["chtwrsbot"], "Negan1":["chtwrsbot"], "Mahalo1": ["chtwrsbot"], "Fernan16": ["chtwrsbot"], "Nobody2": ["chtwrsbot"], "Trinity1": ["chtwrsbot"],
                           "Trinity2": ["chtwrsbot"], "Trinity3": ["chtwrsbot"], "Trinity4": ["chtwrsbot"],
                            "Trinity7": ["chtwrsbot"], "Nobody1": ["chtwrsbot"],
-                           "Nobody": ["chtwrsbot"], "DraX": ["chtwrsbot"]}
+                           "Nobody": ["chtwrsbot"], "Sleep": ["chtwrsbot"]}
 forward_chat = "MyFirst96_bot"
 personal_chat = "TheRealEirvain"
 config_bot = "ScriptCWBot"
@@ -94,12 +94,12 @@ alts_service: dict = {"Fernan11": 0, "Smith1": 1, "Unknown": 2, "Fernan22": 3, "
 #Masiel
 usersCharacter: dict = {"Trinity7": 0, "Mahalo1": 1, "Sleep": 2, "Jean4": 3, "Trinity4": 4, "Mask": 5, "Julio2": 6, "Negan1": 7,
                   "Naruto": 8, "Dani1": 9, "Masiel": 9, "Jean": 10, "Yoama": 11, "Fernan14": 12, "Trinity3": 13, "Trinity1": 14,
-                  "Jean2": 15, "Fernan16": 16, "Julio7": 17, "Trinity2": 18, "Julio5": 19, "Julio6": 20, "Unknown": 21, "Negan": 22, "DraX":23}
+                  "Jean2": 15, "Fernan16": 16, "Julio7": 17, "Trinity2": 18, "Julio5": 19, "Julio6": 20, "Unknown": 21, "Negan": 22, "Sleep":23}
 #intervine script migration
 intervine_users = {"Koki2": 0, "Deadpool": 1, "Assasin": 2, "Yo": 3, "Jean1": 4, "Alexis": 5,
                    "FernanI5": 6, "Jean8": 7, "FernanI4": 8, "Jean9": 9, "Auri": 10, "FernanI3": 11, "Jean5": 12,
                    "Tiger": 13, "Erisbel": 14, "FernanI2": 15, "FernanI1": 16, "Jean10": 17, "Jean3": 18, "Smith2": 19,
-                   "Naruto1": 20, "Smith3": 21}
+                   "Naruto1": 20, "Smith3": 21, "Sleep1": 22}
 trader = {"Fernan2": "07", "Fernan1": "07", "Fernan3": "07", "Fernan4": "07", "Fernan5": "07"}
 usersCW3 = {}
 guild_extraction = {}#"Mask": "1674483077"} {"Pain1": "1656339328"}#"Legendary": "1383884691"}
@@ -112,7 +112,7 @@ meService = {}
 meCharacter = {}
 id_arrays = {"me": me, "meService": meService, "meCharacter": meCharacter}
 stop = False
-fightsFromGuild = {"Yoama": False, "Trinity1": False, "Dani1": False, "Force2": False, "Naruto": False, "DraX": False,
+fightsFromGuild = {"Yoama": False, "Trinity1": False, "Dani1": False, "Force2": False, "Naruto": False, "Sleep": False,
                    "Jean": False, "Trinity2": False, "Mask": False, "Blaze": False, "Jean1": False,
                    "Sylvanna": False, "Force": False, "Legendary2": False, "Fernan14": False,
                    "Masiel": False, "Nico": False, "Legendary": False,
