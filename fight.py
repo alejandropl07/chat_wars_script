@@ -89,7 +89,7 @@ alts_service: dict = {"Fernan11": 0, "Smith1": 1, "Unknown": 2, "Fernan22": 3, "
                 "Pain2": 61, "Fernan33": 62, "Fernan13": 63, "Fernan7": 64, "Fernan8": 65, "Unknow": 66, "Fernan36": 67,
                 "Fernan16": 68, "Jay7": 69, "Jay6": 70, "Jay5": 71, "Fernan15": 72, "A2": 73, "Jay3": 74,
                 "Lu": 75, "Koki": 76, "Koki1": 77, "Koki3": 78, "Fernan18": 79,  "Fernan19": 80, "Jay10": 81, "A1": 82, "Fernan24": 83,
-                "Fernan35": 84, "Fernan34": 85, "Fernan25": 86, "Fernan41": 87, "Fernan40": 88, "Trinity7": 89, "": 90}
+                "Fernan35": 84, "Fernan34": 85, "Fernan25": 86, "Fernan41": 87, "Fernan40": 88, "Trinity7": 89}
 #Alistar solo
 #Masiel
 usersCharacter: dict = {"Trinity7": 0, "Mahalo1": 1, "Sleep": 2, "Jean4": 3, "Trinity4": 4, "Mask": 5, "Julio2": 6, "Negan1": 7,
@@ -1780,7 +1780,7 @@ async def cw_eventCharacters(user, event, me_array):
         await asyncio.sleep(random.randint(10, 25))
         await usersCharacter[user].send_message('chtwrsbot', "/pledge")
     # Getting information
-    elif 'Battle of the seven' in event.raw_text:
+    elif 'Battle of the' in event.raw_text:
         text = event.raw_text
         save_me(Player(meCharacter[user], get_name(text), int(get_level(text)), int(get_hp(text)),
                        int(get_hp_total(text)), int(get_curent_stamina(text)), int(get_stamina(text)),
