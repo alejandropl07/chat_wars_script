@@ -949,7 +949,7 @@ async def cw_event(clients_str, user, me_array, event):
                 await asyncio.sleep(random.randint(5, 7))
                 await clients[clients_str][user].send_message("chtwrsbot", "/learn_" + code)
     # Getting information and setting questing and arena
-    elif 'Battle of the seven' in event.raw_text and not is_stop:
+    elif 'Battle of the' in event.raw_text and not is_stop:
         text = event.raw_text
         save_me(Player(id_arrays[me_array][user], get_name(text), int(get_level(text)), int(get_hp(text)),
                        int(get_hp_total(text)),
