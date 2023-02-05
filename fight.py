@@ -65,7 +65,7 @@ blacklist_monsters_chats = {"Nobody3": ["chtwrsbot"],"Force2": ["chtwrsbot"],
                             "Fernan17": ["chtwrsbot"], "Negan1":["chtwrsbot"], "Mahalo1": ["chtwrsbot"], "Fernan16": ["chtwrsbot"], "Nobody2": ["chtwrsbot"], "Trinity1": ["chtwrsbot"],
                           "Trinity2": ["chtwrsbot"], "Trinity3": ["chtwrsbot"], "Trinity4": ["chtwrsbot"],
                            "Trinity7": ["chtwrsbot"], "Nobody1": ["chtwrsbot"],
-                           "Nobody": ["chtwrsbot"], "Sleep": ["chtwrsbot"], "Shadow": ["chtwrsbot"],  "Shadow1": ["chtwrsbot"], "Shadow2": ["chtwrsbot"], "Shadow3": ["chtwrsbot"], "Shadow4": ["chtwrsbot"]}
+                           "Nobody": ["chtwrsbot"], "Sleep": ["chtwrsbot"], "Shadow": ["chtwrsbot"], "Shadow1": ["chtwrsbot"], "Shadow2": ["chtwrsbot"], "Shadow3": ["chtwrsbot"], "Shadow4": ["chtwrsbot"]}
 forward_chat = "MyFirst96_bot"
 personal_chat = "TheRealEirvain"
 config_bot = "ScriptCWBot"
@@ -89,7 +89,7 @@ alts_service: dict = {"Fernan11": 0, "Smith1": 1, "Unknown": 2, "Fernan22": 3, "
                 "Pain2": 61, "Fernan33": 62, "Fernan13": 63, "Fernan7": 64, "Fernan8": 65, "Unknow": 66, "Fernan36": 67,
                 "Fernan16": 68, "Jay7": 69, "Jay6": 70, "Jay5": 71, "Fernan15": 72, "A2": 73, "Jay3": 74,
                 "Lu": 75, "Koki": 76, "Koki1": 77, "Koki3": 78, "Fernan18": 79,  "Fernan19": 80, "Jay10": 81, "A1": 82, "Fernan24": 83,
-                "Fernan35": 84, "Fernan34": 85, "Fernan25": 86, "Fernan41": 87, "Fernan40": 88, "Trinity7": 89, "Shadow": 90, "Shadow1": 81, "Shadow2": 82, "Shadow3": 83, "Shadow4", 84}
+                "Fernan35": 84, "Fernan34": 85, "Fernan25": 86, "Fernan41": 87, "Fernan40": 88, "Trinity7": 89, "Shadow": 90, "Shadow1": 91, "Shadow2": 92, "Shadow3": 93, "Shadow4": 94}
 #Alistar solo
 #Masiel
 usersCharacter: dict = {"Trinity7": 0, "Mahalo1": 1, "Sleep": 2, "Jean4": 3, "Trinity4": 4, "Mask": 5, "Julio2": 6, "Negan1": 7,
