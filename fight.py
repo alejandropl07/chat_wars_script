@@ -100,8 +100,8 @@ usersCharacter: dict = {"Trinity7": 0, "Mahalo1": 1, "Sleep": 2, "Jean4": 3, "Tr
 #intervine script migration
 intervine_users = {"Koki2": 0, "Deadpool": 1, "Assasin": 2, "Yo": 3, "Jean1": 4, "Alexis": 5,
                    "FernanI5": 6, "Jean8": 7, "FernanI4": 8, "Jean9": 9, "Auri": 10, "FernanI3": 11, "Jean5": 12,
-                   "Tiger": 13, "Erisbel": 14, "FernanI2": 15, "FernanI1": 16, "Jean10": 17, "Jean3": 18, "Smith2": 19,
-                   "Naruto1": 20, "Smith3": 21, "Sleep1": 22}
+                   "Tiger": 13, "Sleep1": 14, "FernanI2": 15, "FernanI1": 16, "Jean10": 17, "Jean3": 18, "Smith2": 19,
+                   "Naruto1": 20, "Smith3": 21}
 trader = {"Fernan2": "07", "Fernan1": "07", "Fernan3": "07", "Fernan4": "07", "Fernan5": "07"}
 usersCW3 = {}
 guild_extraction = {}#"Mask": "1674483077"} {"Pain1": "1656339328"}#"Legendary": "1383884691"}
