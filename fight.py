@@ -6,7 +6,6 @@ from sqlalchemy.log import echo_property
 from sqlalchemy.sql.functions import user, random
 from sqlalchemy import create_engine, MetaData, Table, Integer, String, Boolean, Column, ForeignKey, text
 from sqlalchemy.sql.expression import Update, Insert, Delete, Select
-from sqlalchemy.engine.result import ResultProxy
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import relationship, backref, session, sessionmaker
 from sqlalchemy.orm.query import Query
@@ -65,7 +64,8 @@ blacklist_monsters_chats = {"Nobody3": ["chtwrsbot"],"Force2": ["chtwrsbot"],
                             "Fernan17": ["chtwrsbot"], "Negan1":["chtwrsbot"], "Mahalo1": ["chtwrsbot"], "Fernan16": ["chtwrsbot"], "Nobody2": ["chtwrsbot"], "Trinity1": ["chtwrsbot"],
                           "Trinity2": ["chtwrsbot"], "Trinity3": ["chtwrsbot"], "Trinity4": ["chtwrsbot"],
                            "Trinity7": ["chtwrsbot"], "Nobody1": ["chtwrsbot"],
-                           "Nobody": ["chtwrsbot"], "Sleep": ["chtwrsbot"], "Shadow": ["chtwrsbot"], "Shadow1": ["chtwrsbot"], "Shadow2": ["chtwrsbot"], "Shadow3": ["chtwrsbot"], "Shadow4": ["chtwrsbot"]}
+                           "Nobody": ["chtwrsbot"], "Sleep": ["chtwrsbot"], "Shadow": ["chtwrsbot"], "Shadow1": ["chtwrsbot"],
+                           "Shadow2": ["chtwrsbot"], "Shadow3": ["chtwrsbot"], "Shadow4": ["chtwrsbot"], "Trinity6": ["chtwrsbot"]}
 forward_chat = "MyFirst96_bot"
 personal_chat = "TheRealEirvain"
 config_bot = "ScriptCWBot"
@@ -82,20 +82,21 @@ alts_service: dict = {"Fernan11": 0, "Smith1": 1, "Unknown": 2, "Fernan22": 3, "
                 "Jay2": 15, "Unknown7": 16, "Julio7": 17, "VladiY": 18, "Fernan29": 19, "Fernan37": 20, "Unknown4": 21,
                 "Trinity2": 22, "Fernan2": 23, "Fernan3": 24, "Fernan14": 25, "Pain3": 26, "Nell": 27
                 , "Trinity1": 28, "Fernan39": 29, "Jay4": 30, "Unknown1": 31, "Unknown2": 32, "Masiel1": 33, "Jay9": 34,
-                "Fernan21": 35, "Smith": 36, "Fernan32": 37, "Azur": 38, "Unknown6": 38, "Masiel": 39, "Gato": 40,
+                "Fernan21": 35, "Smith": 36, "Fernan32": 37, "Azur": 38, "Unknown6": 38, "Masiel": 39, "Trinity6": 40,
                 "Fernan30": 41, "Ceeb": 42, "Unknow3": 43, "Fernan26": 44, "Fernan17": 45, "Pain10": 46
                 , "Unknown3": 47, "Julio2": 48, "Unknow2": 49, "Fernan4": 50, "Fernan5": 51, "Fernan6": 52, "Pain9": 53,
                 "Ceeb1": 54, "Pain6": 55, "Unknown5": 56, "Fernan27": 57, "Unknow1": 58, "Fernan28": 59,
                 "Pain2": 61, "Fernan33": 62, "Fernan13": 63, "Fernan7": 64, "Fernan8": 65, "Unknow": 66, "Fernan36": 67,
                 "Fernan16": 68, "Jay7": 69, "Jay6": 70, "Jay5": 71, "Fernan15": 72, "A2": 73, "Jay3": 74,
                 "Lu": 75, "Koki": 76, "Koki1": 77, "Koki3": 78, "Fernan18": 79,  "Fernan19": 80, "Jay10": 81, "A1": 82, "Fernan24": 83,
-                "Fernan35": 84, "Fernan34": 85, "Fernan25": 86, "Fernan41": 87, "Fernan40": 88, "Trinity7": 89, "Shadow": 90, "Shadow1": 91, "Shadow2": 92, "Shadow3": 93, "Shadow4": 94}
+                "Fernan35": 84, "Fernan34": 85, "Fernan25": 86, "Fernan41": 87, "Fernan40": 88, "Trinity7": 89, "Shadow": 90, "Shadow1": 91,
+                "Shadow2": 92, "Shadow3": 93, "Shadow4": 94}
 #Alistar solo
 #Masiel
 usersCharacter: dict = {"Trinity7": 0, "Mahalo1": 1, "Sleep": 2, "Jean4": 3, "Trinity4": 4, "Mask": 5, "Julio2": 6, "Negan1": 7,
                   "Naruto": 8, "Dani1": 9, "Masiel": 9, "Jean": 10, "Yoama": 11, "Fernan14": 12, "Trinity3": 13, "Trinity1": 14,
-                  "Jean2": 15, "Fernan16": 16, "Julio7": 17, "Trinity2": 18, "Julio5": 19, "Julio6": 20, "Unknown": 21, "Negan": 22, "Sleep":23, "Shadow": 24,
-                  "Shadow1": 25, "Shadow2": 26, "Shadow3": 27, "Shadow4": 28}
+                  "Jean2": 15, "Fernan16": 16, "Julio7": 17, "Trinity2": 18, "Julio5": 19, "Julio6": 20, "Unknown": 21, "Negan": 22,
+                  "Sleep":23, "Shadow": 24, "Shadow1": 25, "Shadow2": 26, "Shadow3": 27, "Shadow4": 28, "Trinity6": 29}
 #intervine script migration
 intervine_users = {"Koki2": 0, "Deadpool": 1, "Assasin": 2, "Yo": 3, "Jean1": 4, "Alexis": 5,
                    "FernanI5": 6, "Jean8": 7, "FernanI4": 8, "Jean9": 9, "Auri": 10, "FernanI3": 11, "Jean5": 12,
@@ -121,7 +122,8 @@ fightsFromGuild = {"Yoama": False, "Trinity1": False, "Dani1": False, "Force2": 
                    "Julio8": False, "Nico2": False, "Nico3": False, "Fernan16": False, "Unknown": False, "Kirito": False,
                    "Yoan": False, "Unknown1": False, "Unknown2": False, "Unknown3": False,
                    "Unknown4": False, "Unknown5": False,"Fernan13": False, "Negan": False, "Fernan17": False, "Negan1": False,
-                   "Jean2": False, "Jean4": False, "Mahalo1": False, "Fernan20": False, "Trinity3": False, "Trinity4": False, "Trinity7": False}
+                   "Jean2": False, "Jean4": False, "Mahalo1": False, "Fernan20": False, "Trinity3": False, "Trinity4": False,
+                   "Trinity7": False, "Trinity6": False}
 
 # Click bots
 messages = ['🤖 Message bots', '📣 Join chats']  # ,'🖥 Visit sites',
@@ -249,7 +251,7 @@ async def disconnect():
     try:
         await clientAdmin.disconnect()
     except errors.AuthKeyDuplicatedError:
-        print(i)
+        print("Client Admin AuthKeyDuplicatedError")
     for i in usersCharacter:
         if isinstance(usersCharacter[i], TelegramClient):
             try:
@@ -1366,9 +1368,8 @@ async def handlerCommands(clients_str, user, txt, me_array):
                 if "Jay" in user:
                     await clients[clients_str][user].send_message('chtwrsbot', "/g_def")
                 elif "Trinity" in user:
-                    await clients[clients_str][user].send_message('chtwrsbot', "⚔Attack")
-                    await asyncio.sleep(random.randint(8, 13))
-                    await clients[clients_str][user].send_message('chtwrsbot', "🌑")
+                    if datetime.datetime.utcnow().hour == 17:
+                        await clients[clients_str][user].send_message('chtwrsbot', txt)
                 else:
                     if me_array == "meService":
                         m = await clients[clients_str][user].get_messages(config_bot, search="/set_order ", limit=1)
@@ -1932,11 +1933,11 @@ async def setupScriptCharacters(user, event):
             "ScriptCWBot", "Su umbral de salud para capturar monstruos ahora es de " + str(
                 event.raw_text.split('_')[1]))
     elif '/cant' in event.raw_text:
-        set_config_parameter("Config", myself, "cant_monsters", int(txt1.split('_')[1]))
-        await users[user].send_message("ScriptCWBot",
+        set_config_parameter("Config", meCharacter[user], "cant_monsters", int(txt1.split('_')[1]))
+        await usersCharacter[user].send_message("ScriptCWBot",
                                        "Se ha definido " + str(txt1.split('_')[1]) + " como mínimo de monstruos")
     elif '/trader_resource' in event.raw_text:
-        set_config_parameter("Config", myself, "trader_resource", txt1.split(' ')[1])
+        set_config_parameter("Config", meCharacter[user], "trader_resource", txt1.split(' ')[1])
         await usersCharacter[user].send_message("ScriptCWBot", "Se ha definido " + str(
             txt1.split(' ')[1]) + " como recurso para el trader")
     elif '/startMonsters' in event.raw_text:
@@ -2241,11 +2242,11 @@ async def setupScriptCharactersCW3(user, event):
             "ScriptCWBot", "Su umbral de salud para capturar monstruos ahora es de " + str(
                 event.raw_text.split('_')[1]))
     elif '/cant' in event.raw_text:
-        set_config_parameter("Config", myself, "cant_monsters", int(txt1.split('_')[1]))
-        await users[user].send_message("ScriptCWBot",
+        set_config_parameter("Config", meCharacter[user], "cant_monsters", int(txt1.split('_')[1]))
+        await usersCW3[user].send_message("ScriptCWBot",
                                        "Se ha definido " + str(txt1.split('_')[1]) + " como mínimo de monstruos")
     elif '/trader_resource' in event.raw_text:
-        set_config_parameter("Config", myself, "trader_resource", txt1.split(' ')[1])
+        set_config_parameter("Config", meCharacter[user], "trader_resource", txt1.split(' ')[1])
         await usersCW3[user].send_message("ScriptCWBot", "Se ha definido " + str(
             txt1.split(' ')[1]) + " como recurso para el trader")
     elif '/startMonsters' in event.raw_text:
