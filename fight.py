@@ -90,13 +90,13 @@ alts_service: dict = {"Fernan11": 0, "Smith1": 1, "Unknown": 2, "Fernan22": 3, "
                 "Fernan16": 68, "Jay7": 69, "Jay6": 70, "Jay5": 71, "Fernan15": 72, "A2": 73, "Jay3": 74,
                 "Lu": 75, "Koki": 76, "Koki1": 77, "Koki3": 78, "Fernan18": 79,  "Fernan19": 80, "Jay10": 81, "A1": 82, "Fernan24": 83,
                 "Fernan35": 84, "Fernan34": 85, "Fernan25": 86, "Fernan41": 87, "Fernan40": 88, "Trinity7": 89, "Shadow": 90, "Shadow1": 91,
-                "Shadow2": 92, "Shadow3": 93, "Shadow4": 94, "Negan2": 95, "Negan3": 96, "Negan4": 97}
+                "Shadow2": 92, "Shadow3": 93, "Shadow4": 94, "Negan2": 95, "Negan3": 96, "Negan4": 97, "Negan1": 98}
 #Alistar solo
 #Masiel
-usersCharacter: dict = {"Trinity7": 0, "Mahalo1": 1, "Sleep": 2, "Jean4": 3, "Trinity4": 4, "Mask": 5, "Julio2": 6, "Negan1": 7,
+usersCharacter: dict = {"Trinity7": 0, "Mahalo1": 1, "Sleep": 2, "Jean4": 3, "Trinity4": 4, "Mask": 5, "Julio2": 6, "Trinity6": 7,
                   "Naruto": 8, "Dani1": 9, "Masiel": 9, "Jean": 10, "Yoama": 11, "Fernan14": 12, "Trinity3": 13, "Trinity1": 14,
                   "Jean2": 15, "Fernan16": 16, "Julio7": 17, "Trinity2": 18, "Julio5": 19, "Julio6": 20, "Unknown": 21, "Negan": 22,
-                  "Sleep":23, "Shadow": 24, "Shadow1": 25, "Shadow2": 26, "Shadow3": 27, "Shadow4": 28, "Trinity6": 29}
+                  "Sleep":23, "Shadow": 24, "Shadow1": 25, "Shadow2": 26, "Shadow3": 27, "Shadow4": 28}
 #intervine script migration
 intervine_users = {"Koki2": 0, "Deadpool": 1, "Assasin": 2, "Yo": 3, "Jean1": 4, "Alexis": 5,
                    "FernanI5": 6, "Jean8": 7, "FernanI4": 8, "Jean9": 9, "Auri": 10, "FernanI3": 11, "Jean5": 12,
