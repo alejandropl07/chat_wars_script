@@ -90,7 +90,7 @@ alts_service: dict = {"Fernan11": 0, "Smith1": 1, "Unknown": 2, "Fernan22": 3, "
                 "Fernan16": 68, "Jay7": 69, "Jay6": 70, "Jay5": 71, "Fernan15": 72, "A2": 73, "Jay3": 74,
                 "Lu": 75, "Koki": 76, "Koki1": 77, "Koki3": 78, "Fernan18": 79,  "Fernan19": 80, "Jay10": 81, "A1": 82, "Fernan24": 83,
                 "Fernan35": 84, "Fernan34": 85, "Fernan25": 86, "Fernan41": 87, "Fernan40": 88, "Trinity7": 89, "Shadow": 90, "Shadow1": 91,
-                "Shadow2": 92, "Shadow3": 93, "Shadow4": 94, "Negan2": 95, "Negan3": 96, "Negan4": 97, "Negan1": 98}
+                "Shadow2": 92, "Shadow3": 93, "Shadow4": 94, "Negan2": 95, "Negan3": 96, "Negan4": 97, "Negan1": 98, "Unknow4": 99, "Unknow5": 100}
 #Alistar solo
 #Masiel
 usersCharacter: dict = {"Trinity7": 0, "Mahalo1": 1, "Sleep": 2, "Jean4": 3, "Trinity4": 4, "Mask": 5, "Julio2": 6, "Trinity6": 7,
