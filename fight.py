@@ -79,7 +79,7 @@ alts = {}
 #Masiel1, Masiel
 alts_service: dict = {"Fernan11": 0, "Smith1": 1, "Unknown": 2, "Fernan22": 3, "Fernan12": 4, "Trinity4": 5, "Trinity3": 6, "Fernan31": 7,
                 "Jay1": 8, "Jay8": 9, "Fernan10": 10, "Fernan9": 11, "Fernan1": 12, "Julio5": 13, "Julio6": 14,
-                "Jay2": 15, "Unknown7": 16, "Julio7": 17, "VladiY": 18, "Fernan29": 19, "Fernan37": 20, "Unknown4": 21,
+                "Jay2": 15, "Unknown7": 16, "Julio7": 17, "Unknow5": 18, "Fernan29": 19, "Fernan37": 20, "Unknown4": 21,
                 "Trinity2": 22, "Fernan2": 23, "Fernan3": 24, "Fernan14": 25, "Pain3": 26, "Nell": 27
                 , "Trinity1": 28, "Fernan39": 29, "Jay4": 30, "Unknown1": 31, "Unknown2": 32, "Masiel1": 33, "Jay9": 34,
                 "Fernan21": 35, "Smith": 36, "Fernan32": 37, "Azur": 38, "Unknown6": 38, "Masiel": 39, "Trinity6": 40,
@@ -90,7 +90,7 @@ alts_service: dict = {"Fernan11": 0, "Smith1": 1, "Unknown": 2, "Fernan22": 3, "
                 "Fernan16": 68, "Jay7": 69, "Jay6": 70, "Jay5": 71, "Fernan15": 72, "A2": 73, "Jay3": 74,
                 "Lu": 75, "Koki": 76, "Koki1": 77, "Koki3": 78, "Fernan18": 79,  "Fernan19": 80, "Jay10": 81, "A1": 82, "Fernan24": 83,
                 "Fernan35": 84, "Fernan34": 85, "Fernan25": 86, "Fernan41": 87, "Fernan40": 88, "Trinity7": 89, "Shadow": 90, "Shadow1": 91,
-                "Shadow2": 92, "Shadow3": 93, "Shadow4": 94, "Negan2": 95, "Negan3": 96, "Negan4": 97, "Negan1": 98, "Unknow4": 99, "Unknow5": 100}
+                "Shadow2": 92, "Shadow3": 93, "Shadow4": 94, "Negan2": 95, "Negan3": 96, "Negan4": 97, "Negan1": 98, "Unknow4": 99}
 #Alistar solo
 #Masiel
 usersCharacter: dict = {"Trinity7": 0, "Mahalo1": 1, "Sleep": 2, "Jean4": 3, "Trinity4": 4, "Mask": 5, "Julio2": 6, "Trinity6": 7,
@@ -992,10 +992,6 @@ async def cw_event(clients_str, user, me_array, event):
                         seconds_time_quest = time_quest.seconds
                         minutes_to_battle = (seconds_time_quest // 3600) == 7 \
                                             and ((seconds_time_quest // 60) % 60) >= 30
-                        if user == "VladiY":
-                            minutes_to_battle = (seconds_time_quest // 3600) == 7
-                            if minutes_to_battle:
-                                clientAdmin.send_message("RealScript", str((seconds_time_quest // 3600)))
                         if priority != 4:  # have time priority
                             if minutes_to_battle:
                                 break
@@ -1361,9 +1357,7 @@ async def AuctionBot(clients_str, user, event):
 async def handlerCommands(clients_str, user, txt, me_array):
     if user != "Fernan":
         if "Defend" in txt and get_config_parameter("Permission", id_arrays[me_array][user], "orders"):
-            if user == "VladiY" and (datetime.datetime.now().hour == 22):
-                await clients[clients_str][user].send_message('chtwrsbot', "/use_crl")
-            elif user != "VladiY" and user != "Kisame" and "Julio" not in user:
+            if user != "Kisame" and "Julio" not in user:
                 m = []
                 if "Jay" in user:
                     await clients[clients_str][user].send_message('chtwrsbot', "/g_def")
@@ -2008,43 +2002,6 @@ async def guildCharactersGT(user, event):
 # async def my_event_handlerScript(event):
 # await event.forward_to(personal_chat)
 #  from_users=976918452
-
-
-#@clientAdmin.on(events.NewMessage(chats="RealScript"))
-@clientVladiY.on(events.NewMessage(chats=1247785159, from_users=976918452))
-async def my_event_handler_orders_vladi(event):
-    if "Attack" in event.raw_text and not isTimeForHideAndSpend():
-        delay = (8 - get_cw_time().hour) * 60
-        text = event.raw_text.split("\n")[0].split(" ")[1][0]
-        await clientAdmin.send_message("RealScript", text)
-        await clientVladiY.send_message(forward_chat, "⚔Attack",
-                                        schedule=timedelta(minutes=delay - get_cw_time().minute - 58))
-        await asyncio.sleep(random.randint(4, 25))
-        await clientVladiY.send_message(forward_chat, text,
-                                        schedule=timedelta(minutes=delay - get_cw_time().minute - 56))
-        await clientAdmin.send_message("RealScript", text)
-        # await clients["alts"][guild_masters[0]].send_message(config_bot, "/g_order "+ text + " 11 19",
-        #                                schedule=timedelta(minutes = random.randint(53, 55)))
-        # await clients["alts"][guild_masters[0]].send_message(config_bot, "/g_order " + text + " 2 3",
-        #                                schedule=timedelta(minutes = random.randint(53, 55)))
-        await clientVladiY.send_message(forward_chat, "/report",
-                                        schedule=timedelta(minutes=delay - get_cw_time().minute +
-                                                                   random.randint(20, 23)))
-        #task = """
-        #await client{0}.send_message(forward_chat, "/advlist",schedule=timedelta(minutes=delay - get_cw_time().minute + 15))
-        #"""
-        #for item in advisers:
-        #    exec(task.format(item))
-        #print(text)
-    elif "DEFEND" in event.raw_text and "⚔"not in event.raw_text: # and not isTimeForHideAndSpend():
-        delay = (8 - get_cw_time().hour) * 60
-        text = event.raw_text[0] + "Defend"
-        await clientVladiY.send_message(forward_chat, "/report",
-                                        schedule=timedelta(minutes=delay - get_cw_time().minute +
-                                                           random.randint(20, 23)))
-        await clientAdmin.send_message("RealScript", text)
-        await clientVladiY.send_message(forward_chat, text, schedule=timedelta(minutes=delay - 40))
-
 
 #@clientPein1.on(events.NewMessage(chats="t.me/alliancega"))
 #async def my_event_handler_orders_red(event: Message):
