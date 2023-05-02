@@ -47,9 +47,9 @@ api_hash = '2e588001214d2c25fca7a3abeac619f2'
 id_chats = {"gt_chat": 1456226318, "moon_pve": 1408823679, "la_chat": 1233002681, "mem_chat": 1490803916,
             "hs_chat": 1576422147, "yoama_chat": "https://t.me/joinchat/hVuWf9I1nfJhMDQx"}
 blacklist_monsters_chats = {"Nobody3": ["chtwrsbot"],"Force2": ["chtwrsbot"],
-                            "Luis": ["chtwrsbot"], "Nico1": ["chtwrsbot"], "Fernan20": ["chtwrsbot"],
+                            "Luis": ["chtwrsbot"], "Nico1": ["chtwrsbot"],
                             "Jean": ["chtwrsbot"], "Jean4": ["chtwrsbot"], "Masiel": ["chtwrsbot"],
-                            "Jean2": ["chtwrsbot"], "Fernan14": ["chtwrsbot"], "Jean1": ["chtwrsbot"],
+                            "Jean2": ["chtwrsbot"], "Jean1": ["chtwrsbot"],
                             "Yoan": ["chtwrsbot"], "Sylvanna": ["chtwrsbot"],
                             "Force": ["chtwrsbot"],
                             "Yoama": ["chtwrsbot"], "Dani1": ["chtwrsbot"], "Nico": ["chtwrsbot"],
@@ -60,12 +60,11 @@ blacklist_monsters_chats = {"Nobody3": ["chtwrsbot"],"Force2": ["chtwrsbot"],
                              "Sleep": ["chtwrsbot"], "Unknown": ["chtwrsbot"], "Kirito": ["chtwrsbot"],
                              "Naruto": ["chtwrsbot"],
                             "Unknown1": ["chtwrsbot"], "Unknown2": ["chtwrsbot"], "Unknown3": ["chtwrsbot"]
-                            , "Unknown4": ["chtwrsbot"], "Unknown5": ["chtwrsbot"],"Fernan13": ["chtwrsbot"], "Negan": ["chtwrsbot"],
-                            "Fernan17": ["chtwrsbot"], "Negan1":["chtwrsbot"], "Mahalo1": ["chtwrsbot"], "Fernan16": ["chtwrsbot"], "Nobody2": ["chtwrsbot"], "Trinity1": ["chtwrsbot"],
-                          "Trinity2": ["chtwrsbot"], "Trinity3": ["chtwrsbot"], "Trinity4": ["chtwrsbot"],
-                           "Trinity7": ["chtwrsbot"], "Nobody1": ["chtwrsbot"],
+                            , "Unknown4": ["chtwrsbot"], "Unknown5": ["chtwrsbot"], "Negan": ["chtwrsbot"],
+                             "Negan1":["chtwrsbot"], "Mahalo1": ["chtwrsbot"],  "Nobody2": ["chtwrsbot"]
+                            , "Nobody1": ["chtwrsbot"],
                            "Nobody": ["chtwrsbot"], "Sleep": ["chtwrsbot"], "Shadow": ["chtwrsbot"], "Shadow1": ["chtwrsbot"],
-                           "Shadow2": ["chtwrsbot"], "Shadow3": ["chtwrsbot"], "Shadow4": ["chtwrsbot"], "Trinity6": ["chtwrsbot"]}
+                           "Shadow2": ["chtwrsbot"], "Shadow3": ["chtwrsbot"], "Shadow4": ["chtwrsbot"]}
 forward_chat = "MyFirst96_bot"
 personal_chat = "TheRealEirvain"
 config_bot = "ScriptCWBot"
@@ -77,32 +76,21 @@ num_users = 2
 alts = {}
 #Julio5, Julio6
 #Masiel1, Masiel
-alts_service: dict = {"Fernan11": 0, "Smith1": 1, "Unknown": 2, "Fernan22": 3, "Fernan12": 4, "Trinity4": 5, "Trinity3": 6, "Fernan31": 7,
-                "Jay1": 8, "Jay8": 9, "Fernan10": 10, "Fernan9": 11, "Fernan1": 12, "Julio5": 13, "Julio6": 14,
-                "Jay2": 15, "Unknown7": 16, "Julio7": 17, "Unknow5": 18, "Fernan29": 19, "Fernan37": 20, "Unknown4": 21,
-                "Trinity2": 22, "Fernan2": 23, "Fernan3": 24, "Fernan14": 25, "Pain3": 26, "Nell": 27
-                , "Trinity1": 28, "Fernan39": 29, "Jay4": 30, "Unknown1": 31, "Unknown2": 32, "Masiel1": 33, "Jay9": 34,
-                "Fernan21": 35, "Smith": 36, "Fernan32": 37, "Azur": 38, "Unknown6": 38, "Masiel": 39, "Trinity6": 40,
-                "Fernan30": 41, "Ceeb": 42, "Unknow3": 43, "Fernan26": 44, "Fernan17": 45, "Pain10": 46
-                , "Unknown3": 47, "Julio2": 48, "Unknow2": 49, "Fernan4": 50, "Fernan5": 51, "Fernan6": 52, "Pain9": 53,
-                "Ceeb1": 54, "Pain6": 55, "Unknown5": 56, "Fernan27": 57, "Unknow1": 58, "Fernan28": 59,
-                "Pain2": 61, "Fernan33": 62, "Fernan13": 63, "Fernan7": 64, "Fernan8": 65, "Unknow": 66, "Fernan36": 67,
-                "Fernan16": 68, "Jay7": 69, "Jay6": 70, "Jay5": 71, "Fernan15": 72, "A2": 73, "Jay3": 74,
-                "Lu": 75, "Koki": 76, "Koki1": 77, "Koki3": 78, "Fernan18": 79,  "Fernan19": 80, "Jay10": 81, "A1": 82, "Fernan24": 83,
-                "Fernan35": 84, "Fernan34": 85, "Fernan25": 86, "Fernan41": 87, "Fernan40": 88, "Trinity7": 89, "Shadow": 90, "Shadow1": 91,
-                "Shadow2": 92, "Shadow3": 93, "Shadow4": 94, "Negan2": 95, "Negan3": 96, "Negan4": 97, "Negan1": 98, "Unknow4": 99}
-#Alistar solo
+alts_service: dict = {"Negan4": 0, "Smith1": 1, "Unknown": 2, "Unknow": 3, "Negan3": 4, "Negan2": 5, "Negan1": 6, "Unknow4": 7,
+                "Shadow": 8, "Shadow1": 9, "Unknow1": 10, "Unknown5": 11, "Unknow2": 12, "Julio5": 13, "Julio6": 14,
+                "Shadow2": 15, "Unknown7": 16, "Julio7": 17, "Unknow5": 18, "Masiel": 19, "Unknown6": 20, "Unknown4": 21,
+                "Lu": 22, "Julio2": 23, "Unknow3": 24, "Azur": 25, "Pain3": 26, "Nell": 27
+                , "A1": 28, "Smith": 29, "Shadow3": 30, "Unknown1": 31, "Unknown2": 32, "Masiel1": 33, "Shadow4": 34,
+                "Unknown3": 35}
 #Masiel
-usersCharacter: dict = {"Trinity7": 0, "Mahalo1": 1, "Sleep": 2, "Jean4": 3, "Trinity4": 4, "Mask": 5, "Julio2": 6, "Trinity6": 7,
-                  "Naruto": 8, "Dani1": 9, "Masiel": 9, "Jean": 10, "Yoama": 11, "Fernan14": 12, "Trinity3": 13, "Trinity1": 14,
-                  "Jean2": 15, "Fernan16": 16, "Julio7": 17, "Trinity2": 18, "Julio5": 19, "Julio6": 20, "Unknown": 21, "Negan": 22,
-                  "Sleep":23, "Shadow": 24, "Shadow1": 25, "Shadow2": 26, "Shadow3": 27, "Shadow4": 28}
+usersCharacter: dict = {"Sleep": 0, "Mahalo1": 1, "Sleep": 2, "Jean4": 3, "Shadow1": 4, "Mask": 5, "Julio2": 6, "Shadow": 7,
+                  "Naruto": 8, "Dani1": 9, "Masiel": 9, "Jean": 10, "Yoama": 11, "Negan": 12, "Shadow3": 13, "Shadow4": 14,
+                  "Jean2": 15, "Unknown": 16, "Julio7": 17, "Shadow2": 18, "Julio5": 19, "Julio6": 20}
 #intervine script migration
-intervine_users = {"Koki2": 0, "Deadpool": 1, "Assasin": 2, "Yo": 3, "Jean1": 4, "Alexis": 5,
-                   "FernanI5": 6, "Jean8": 7, "FernanI4": 8, "Jean9": 9, "Auri": 10, "FernanI3": 11, "Jean5": 12,
-                   "Tiger": 13, "Sleep1": 14, "FernanI2": 15, "FernanI1": 16, "Jean10": 17, "Jean3": 18, "Smith2": 19,
-                   "Naruto1": 20, "Smith3": 21}
-trader = {"Fernan2": "07", "Fernan1": "07", "Fernan3": "07", "Fernan4": "07", "Fernan5": "07"}
+intervine_users = {"Smith3": 0, "Deadpool": 1, "Assasin": 2, "Yo": 3, "Jean1": 4, "Alexis": 5,
+                   "Naruto1": 6, "Jean8": 7, "Jean10": 8, "Jean9": 9, "Auri": 10, "Jean3": 11, "Jean5": 12,
+                   "Tiger": 13, "Sleep1": 14, "Smith2": 15}
+trader = {}
 usersCW3 = {}
 guild_extraction = {}#"Mask": "1674483077"} {"Pain1": "1656339328"}#"Legendary": "1383884691"}
 snipping = {}#"Godfather": 1}
@@ -114,16 +102,15 @@ meService = {}
 meCharacter = {}
 id_arrays = {"me": me, "meService": meService, "meCharacter": meCharacter}
 stop = False
-fightsFromGuild = {"Yoama": False, "Trinity1": False, "Dani1": False, "Force2": False, "Naruto": False, "Sleep": False,
-                   "Jean": False, "Trinity2": False, "Mask": False, "Blaze": False, "Jean1": False,
-                   "Sylvanna": False, "Force": False, "Legendary2": False, "Fernan14": False,
+fightsFromGuild = {"Yoama": False, "Dani1": False, "Force2": False, "Naruto": False, "Sleep": False,
+                   "Jean": False, "Mask": False, "Blaze": False, "Jean1": False,
+                   "Sylvanna": False, "Force": False, "Legendary2": False,
                    "Masiel": False, "Nico": False, "Legendary": False,
                    "Sleep": False, "Julio4": False, "Julio5": False, "Julio6": False, "Julio7": False,
-                   "Julio8": False, "Nico2": False, "Nico3": False, "Fernan16": False, "Unknown": False, "Kirito": False,
+                   "Julio8": False, "Nico2": False, "Nico3": False, "Unknown": False, "Kirito": False,
                    "Yoan": False, "Unknown1": False, "Unknown2": False, "Unknown3": False,
-                   "Unknown4": False, "Unknown5": False,"Fernan13": False, "Negan": False, "Fernan17": False, "Negan1": False,
-                   "Jean2": False, "Jean4": False, "Mahalo1": False, "Fernan20": False, "Trinity3": False, "Trinity4": False,
-                   "Trinity7": False, "Trinity6": False}
+                   "Unknown4": False, "Unknown5": False, "Negan": False, "Negan1": False,
+                   "Jean2": False, "Jean4": False, "Mahalo1": False}
 
 # Click bots
 messages = ['🤖 Message bots', '📣 Join chats']  # ,'🖥 Visit sites',
@@ -599,60 +586,6 @@ async def setupScript(clients_str, user, me_array, txt1):
             await clients[clients_str][user].send_message("ScriptCWBot", "Se ha apagado la funcionalidad de las arenas")
         else:
             await clients[clients_str][user].send_message("ScriptCWBot", "El comando no es correcto")
-    elif "/fernan_orders" in txt1 and user == "Fernan1":
-        for c in alts_service.keys():
-            try:
-                if "Fernan" in c:
-                    await alts_service[c].send_message("botniatobot", "/order")
-                    await asyncio.sleep(random.randint(3, 6))
-            except Exception as e:
-                continue
-        await clients[clients_str][user].send_message('ScriptCWBot', "/fernan_orders",
-                                                      schedule=timedelta(minutes=480))
-    elif "/go_attack" in txt1 and user == "Fernan1":
-        castle_order = txt1.split(" ")[1]
-        for c in alts_service.keys():
-            try:
-                if "Fernan" in c:
-                    await alts_service[c].send_message('chtwrsbot', "⚔️Attack")
-                    await asyncio.sleep(random.randint(2, 3))
-                    await alts_service[c].send_message("chtwrsbot", castle_order)
-                    await asyncio.sleep(random.randint(3, 6))
-            except Exception as e:
-                continue
-        await clients[clients_str][user].send_message('ScriptCWBot', "/fernan_castle_orders",
-                                                      schedule=timedelta(minutes=480))
-    elif "/command" in txt1 and user == "Fernan1":
-        command = txt1.split(" ")[1]
-        for c in alts_service.keys():
-            try:
-                if "Fernan" in c:
-                    await alts_service[c].send_message("chtwrsbot", command)
-                    await asyncio.sleep(random.randint(3, 6))
-            except Exception as e:
-                continue
-        await clients[clients_str][user].send_message('ScriptCWBot', "/fernan_castle_orders",
-                                                      schedule=timedelta(minutes=480))
-    elif "/orders" in txt1 and user == "Jay7":
-        for c in alts_service.keys():
-            try:
-                if "Jay" in c: #  and "Jay2" not in c and "Jay3" not in c
-                    await alts_service[c].send_message("chtwrsbot", "/g_def")
-                    await asyncio.sleep(random.randint(3, 6))
-            except Exception as e:
-                continue
-        await clients[clients_str][user].send_message('ScriptCWBot', "/orders",
-                                                      schedule=timedelta(minutes=480))
-    elif "/orders" in txt1 and user == "Koki":
-        for c in alts_service.keys():
-            try:
-                if "Koki" in c and "Koki1" not in c:
-                    await alts_service[c].send_message("chtwrsbot", "/g_def")
-                    await asyncio.sleep(random.randint(3, 6))
-            except Exception as e:
-                continue
-        await clients[clients_str][user].send_message('ScriptCWBot', "/orders",
-                                                      schedule=timedelta(minutes=480))
     elif '/hide' in txt1:
         rec = ""
         if len(txt1.split('_')) != 0:
@@ -1082,7 +1015,7 @@ async def cw_event(clients_str, user, me_array, event):
         elif get_config_parameter("Permission", id_arrays[me_array][user], "quest"):
             await asyncio.sleep(random.randint(10, 12))
             quest_click = get_config_parameter("Config", id_arrays[me_array][user], "quest")
-            if "Fernan" in user or "A1" == user or "A2" == user:
+            if "A1" == user or "A2" == user:
                 quest_click = random.randint(0, 2)
             await event.click(quest_click)
     # Arena
@@ -1103,8 +1036,7 @@ async def cw_event(clients_str, user, me_array, event):
                 print("You block the bot", str(user))
         delay_all = start + delay * (to_do) + random.randint(1, 2)
         # await clients[clients_str][user].send_message(forward_chat, "⚖Exchange", schedule=timedelta(minutes=delay_all))
-        if("Koki" not in user):
-            await clients[clients_str][user].send_message(forward_chat, '/stock',
+        await clients[clients_str][user].send_message(forward_chat, '/stock',
                                                       schedule=timedelta(minutes=delay_all))
     # Manage stamina restored
     elif 'Stamina restored' in event.raw_text and get_config_parameter("Permission", id_arrays[me_array][user],
@@ -1302,16 +1234,16 @@ async def cw_event(clients_str, user, me_array, event):
             await clients[clients_str][buyer].send_message("chtwrsbot", event.raw_text.split("make a bet:")[1])
 
 #Orders Fernan
-async def ordersBotniato(clients_str, user, event):
-    if "Orders for next battle" in event.raw_text:
-        for entity in event.entities:
-            if isinstance(entity, MessageEntityTextUrl):
-                if("/ga" in entity.url):
-                    print(entity.url)
-                    await clients[clients_str][user].send_message("chtwrsbot", entity.url.split("url=")[1])
-    elif "For security reasons you are asked" in event.raw_text:
-        await asyncio.sleep(random.randint(3, 6))
-        await clients[clients_str][user].send_message("botniatobot", "/" + event.raw_text.split("/")[1])
+#async def ordersBotniato(clients_str, user, event):
+#    if "Orders for next battle" in event.raw_text:
+#        for entity in event.entities:
+#            if isinstance(entity, MessageEntityTextUrl):
+#                if("/ga" in entity.url):
+#                    print(entity.url)
+#                    await clients[clients_str][user].send_message("chtwrsbot", entity.url.split("url=")[1])
+#    elif "For security reasons you are asked" in event.raw_text:
+#        await asyncio.sleep(random.randint(3, 6))
+#        await clients[clients_str][user].send_message("botniatobot", "/" + event.raw_text.split("/")[1])
 
 
 async def AuctionBot(clients_str, user, event):
@@ -1359,21 +1291,15 @@ async def handlerCommands(clients_str, user, txt, me_array):
         if "Defend" in txt and get_config_parameter("Permission", id_arrays[me_array][user], "orders"):
             if user != "Kisame" and "Julio" not in user:
                 m = []
-                if "Jay" in user:
-                    await clients[clients_str][user].send_message('chtwrsbot', "/g_def")
-                elif "Trinity" in user:
-                    if datetime.datetime.utcnow().hour == 17:
-                        await clients[clients_str][user].send_message('chtwrsbot', txt)
+                if me_array == "meService":
+                    m = await clients[clients_str][user].get_messages(config_bot, search="/set_order ", limit=1)
+                await asyncio.sleep(random.randint(15, 20))
+                if len(m) == 0 or "Defend" in m[0].text:
+                    await clients[clients_str][user].send_message('chtwrsbot', txt)
                 else:
-                    if me_array == "meService":
-                        m = await clients[clients_str][user].get_messages(config_bot, search="/set_order ", limit=1)
+                    await clients[clients_str][user].send_message('chtwrsbot', "⚔Attack")
                     await asyncio.sleep(random.randint(15, 20))
-                    if len(m) == 0 or "Defend" in m[0].text:
-                        await clients[clients_str][user].send_message('chtwrsbot', txt)
-                    else:
-                        await clients[clients_str][user].send_message('chtwrsbot', "⚔Attack")
-                        await asyncio.sleep(random.randint(15, 20))
-                        await clients[clients_str][user].send_message('chtwrsbot', m[0].text.split(" ")[1])
+                    await clients[clients_str][user].send_message('chtwrsbot', m[0].text.split(" ")[1])
                 await clients[clients_str][user].send_message(forward_chat, "/report",
                                                               schedule=timedelta(minutes=60 - get_cw_time().minute + \
                                                                                          random.randint(12, 14)))
@@ -1499,7 +1425,7 @@ async def cleanExchange(clients_str, user, txt):
 async def tInfo(clients_str, user, txt, me_array):
     if (isTimeForHideAndSpend()):
         if get_config_parameter("Config", id_arrays[me_array][user], "resources_for_hide").split(",")[0].capitalize() \
-                in txt and user != "Fernan":
+                in txt:
             item = resources[(
                 get_config_parameter("Config", id_arrays[me_array][user], "resources_for_hide").split(",")[0]).lower()][
                 0]
@@ -2487,7 +2413,7 @@ async def cw_eventIntervine(user, event):
         await asyncio.sleep(wait_time)
         await intervine_users[user].send_message('chtwrsbot', "/pledge")
     if 'You defended villagers well. In exchange for your help,' in event.raw_text\
-            and ("Jean" in user or "Naruto1" in user or "Fernan" in user or "Deadpool" in user or "Koki1" in user):
+            and ("Jean" in user or "Naruto1" in user or "Deadpool" in user):
         cant = event.raw_text.split("carry ")[1].split(".")[0]
         wait_time = random.randint(5, 10)
         await asyncio.sleep(wait_time)
