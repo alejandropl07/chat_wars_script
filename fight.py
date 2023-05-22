@@ -1,6 +1,6 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-import logging  
+import logging   
 import logging.config
 from sqlalchemy.log import echo_property
 from sqlalchemy.sql.functions import user, random
